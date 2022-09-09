@@ -1,8 +1,11 @@
 print('**** Welcome to the LAB grade calculator!****')
+#after printing your first line, the user will input their name into the variable
 name = input('Who are we calculating grades for? ==>')
 print(name)
 print()
+#the user will then input a grade that will convert to a float in order to do calculations
 lab_grade = float(input('Enter the labs grade? ==>'))
+#you will then use if else statements to warn the user that they cannot use grades over 100 or less than 0
 if lab_grade >100:
     print('The lab value should be 100 or less. It should be changed to 100')
     lab_grade = 100
@@ -11,6 +14,7 @@ elif lab_grade <0:
     lab_grade = 0
 print(lab_grade)
 print()
+#the user will then input a grade that will convert to a float in order to do calculations
 exam_grade = float(input('Enter the EXAMS grade? ==>'))
 if exam_grade >100:
     print('The lab value should be 100 or less. It should be changed to 100')
@@ -20,6 +24,7 @@ elif exam_grade <0:
     exam_grade = 0
 print(exam_grade)
 print()
+#the user will then input a grade that will convert to a float in order to do calculations
 attendance = float(input('Enter the Attendance grade? ==>'))
 if attendance >100:
     print('The lab value should be 100 or less. It should be changed to 100')
@@ -46,7 +51,7 @@ elif final_grade <70 and final_grade >=60:
     print(name , 'has a letter grade of D')
 elif final_grade <60 and final_grade >=0:
     print(name , 'has a letter grade of F')
-
+#you will then print your exiting text
 print('****Thanks for using the Lab grade calculator ****')
 
 
